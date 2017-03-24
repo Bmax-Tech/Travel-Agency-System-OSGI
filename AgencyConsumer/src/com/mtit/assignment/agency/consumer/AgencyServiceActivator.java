@@ -48,14 +48,18 @@ public class AgencyServiceActivator implements BundleActivator {
 	 * Initial console for user
 	 */
 	private void initConsole() {
-		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("     Welcome to Agency Portal    \n");
-
-		System.out.println("Option				           key No");
-		System.out.println("AirLine Reservation.............. 1");
-		System.out.println("Hotel Reservation................ 2");
-		
-
+		System.out.println("");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("~~~~~                                ~~~~~");
+		System.out.println("~~~~~    Welcome to Agency Portal    ~~~~~");
+		System.out.println("~~~~~                                ~~~~~");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("Option                              key No");
+		System.out.println("------------------------------------------");
+		System.out.println("AirLine Reservation                    1  ");
+		System.out.println("Hotel Reservation                      2  ");
+		System.out.println("------------------------------------------");
+		System.out.print("Enter Option                          :");
 		scanner = new Scanner(System.in);
 		int no = Integer.parseInt(scanner.nextLine());
 
@@ -77,8 +81,11 @@ public class AgencyServiceActivator implements BundleActivator {
 	 * hotel reservation console for user
 	 */
 	private void consoleHotel() {
-		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("     Welcome to Hotel-Agency Portal    \n");
+		System.out.println("");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("       Welcome to Hotel-Agency Portal     ");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("");
 		// print options menu
 		this.processOptionHotel();
 	}
@@ -87,8 +94,11 @@ public class AgencyServiceActivator implements BundleActivator {
 	 * hotel reservation console for user
 	 */
 	private void consoleAirLine() {
-		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("     Welcome to Air-Agency Portal    \n");
+		System.out.println("");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("        Welcome to Air-Agency Portal      ");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("");
 		// print options menu
 		this.processOptionAirLine();
 	}
@@ -98,13 +108,15 @@ public class AgencyServiceActivator implements BundleActivator {
 	 */
 	@SuppressWarnings("resource")
 	private void processOptionAirLine() {
-		System.out.println("Option				           key No");
-		System.out.println("List Flights..................... 1");
-		System.out.println("Check Flight..................... 2");
-		System.out.println("Book Flight...................... 3");
-		System.out.println("Exit............................. 4\n");
-		System.out.print("Enter option : ");
-
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("Option                              key No");
+		System.out.println("------------------------------------------");
+		System.out.println("List Flights                           1  ");
+		System.out.println("Check Flight                           2  ");
+		System.out.println("Book Flight                            3  ");
+		System.out.println("Exit                                   4  ");
+		System.out.println("------------------------------------------");
+		System.out.print("Enter option                            :");
 		Scanner scanner = new Scanner(System.in);
 		int no = Integer.parseInt(scanner.nextLine());
 
@@ -130,9 +142,9 @@ public class AgencyServiceActivator implements BundleActivator {
 			// check flight
 			System.out.print("\nEnter Full Name		: ");
 			String name = scanner.nextLine();
-			System.out.println("Enter Flight No 	: ");
+			System.out.print("Enter Flight No 	: ");
 			String flight = scanner.nextLine();
-			System.out.println("Enter Passenger Count 	: ");
+			System.out.print("Enter Passenger Count 	: ");
 			int passengercount = Integer.parseInt(scanner.nextLine());
 			Date newDate = new Date();
 			System.out.println(
@@ -150,13 +162,14 @@ public class AgencyServiceActivator implements BundleActivator {
 	 */
 	@SuppressWarnings("resource")
 	private void processOptionHotel() {
-		
-		System.out.println("Option				          key No");
-		System.out.println("List Hotels..................... 1");
-		System.out.println("Check Rooms..................... 2");
-		System.out.println("Exit............................ 3\n");
-		System.out.print("Enter option : ");
-
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("Option                              key No");
+		System.out.println("------------------------------------------");
+		System.out.println("List Hotels                            1  ");
+		System.out.println("Check Rooms                            2  ");
+		System.out.println("Exit                                   3  ");
+		System.out.println("------------------------------------------");
+		System.out.print("Enter option                            :");
 		Scanner scanner = new Scanner(System.in);
 		int no = Integer.parseInt(scanner.nextLine());
 

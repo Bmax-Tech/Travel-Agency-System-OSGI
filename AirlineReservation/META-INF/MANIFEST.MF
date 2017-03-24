@@ -10,3 +10,5 @@ Bundle-ActivationPolicy: lazy
 Import-Package: org.osgi.framework
 Export-Package: com.mtit.assignment.airline.publisher
 Bundle-Activator: com.mtit.assignment.airline.publisher.AirPlaneServiceActivator
+
+

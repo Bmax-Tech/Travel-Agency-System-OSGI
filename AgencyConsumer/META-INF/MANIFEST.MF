@@ -7,5 +7,5 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Import-Package: org.osgi.framework, com.mtit.assignment.airline.publisher
+Import-Package: org.osgi.framework, com.mtit.assignment.airline.publisher, com.mtit.assignment.hotel.publisher
 Bundle-Activator: com.mtit.assignment.agency.consumer.AgencyServiceActivator

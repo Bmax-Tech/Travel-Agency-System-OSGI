@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HotelReservation
+Bundle-SymbolicName: HotelReservation
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: org.osgi.framework
+Export-Package: com.mtit.assignment.hotel.publisher
+Bundle-Activator: com.mtit.assignment.hotel.publisher.HotelServiceActivator
+
